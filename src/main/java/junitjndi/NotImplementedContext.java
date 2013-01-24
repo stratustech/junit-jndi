@@ -44,7 +44,7 @@ abstract class NotImplementedContext implements Context{
 
 	@Override
 	public void unbind(Name name) throws NamingException {
-		unbind(name.toString());
+		throw new UnsupportedOperationException();
 	}
 
 	@Override
@@ -109,7 +109,7 @@ abstract class NotImplementedContext implements Context{
 
 	@Override
 	public Object lookupLink(Name name) throws NamingException {
-		return lookupLink(name.toString());
+		throw new UnsupportedOperationException();
 	}
 
 	@Override
@@ -119,7 +119,7 @@ abstract class NotImplementedContext implements Context{
 
 	@Override
 	public NameParser getNameParser(Name name) throws NamingException {
-		return getNameParser(name.toString());
+		throw new UnsupportedOperationException();
 	}
 
 	@Override
